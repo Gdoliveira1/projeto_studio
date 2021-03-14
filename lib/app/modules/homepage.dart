@@ -9,17 +9,33 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   showAlertDialog2(BuildContext context) {
     Widget cancelaButton = FlatButton(
-      child: Text("Cancelar"),
+      child: Text(
+        "Cancelar",
+        style:
+            TextStyle(fontFamily: 'Poppins', fontSize: 14, color: Colors.black),
+      ),
       onPressed: () {},
     );
     Widget continuaButton = FlatButton(
-      child: Text("Continar"),
+      child: Text(
+        "Aceitar",
+        style:
+            TextStyle(fontFamily: 'Poppins', fontSize: 14, color: Colors.black),
+      ),
       onPressed: () {},
     );
     //configura o AlertDialog
     AlertDialog alert = AlertDialog(
-      title: Text("Pagamento"),
-      content: Text("Clique em aceitar para concluir a compra"),
+      title: Text(
+        "Pagamento",
+        style: TextStyle(
+            fontFamily: 'Poppins', fontSize: 16, color: Colors.grey[900]),
+      ),
+      content: Text(
+        "Clique em aceitar para concluir a compra",
+        style: TextStyle(
+            fontFamily: 'Poppins', fontSize: 12, color: Colors.grey[900]),
+      ),
       actions: [
         cancelaButton,
         continuaButton,
